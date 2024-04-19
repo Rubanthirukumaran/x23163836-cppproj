@@ -1,0 +1,16 @@
+<!-- fundraising/templates/fundraising/donor_list.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Donor List</title>
+</head>
+<body>
+    <h1>Donor List</h1>
+    <ul>
+        {% for donor in donors %}
+            <li>{{ donor.name }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
